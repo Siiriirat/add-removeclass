@@ -54,14 +54,14 @@ header, footer {
 	text-align: center;
 }
 footer {
-	height: 40%;
+	height: 60%;
 }
 .main {
 	padding: 1.5em 3em 1.5em 1.5em;
 }
 .sidebar {
 	padding: 2em 1.5em;
-	background-color: #333;
+	background-color: #fff;
 }
 .large-photo {
 	height: 0;
@@ -70,7 +70,6 @@ footer {
 	margin-bottom: 1em;
 }
 @media (min-width:43.75em) {
-	/* responsive layout */
 	.candy-wrapper {
 		max-width: 80em;
 		margin: 0 auto;
@@ -85,10 +84,8 @@ footer {
 		width: 25%;
 		vertical-align: top;
 	}
-	/* loaded fixed-sticky polyfill
-	https://github.com/filamentgroup/fixed-sticky */
 	.fixedsticky {
-		top: 100px;
+		top: 12%;
 	}
 }
 .fixedsticky {
@@ -126,7 +123,6 @@ footer {
   z-index: 1000;
   transition: all 0.8s ease-out;
 }
-
 .share-btn {
   display: inline-block;
   color: #ffffff;
@@ -154,7 +150,7 @@ footer {
 .share-btn.reddit      { background: #ff5700; }
 .share-btn.linkedin    { background: #4875B4; }
 .share-btn.share       { background: #a1cc3a; }
-.share-btn.email       { background: #c4830b; }
+.share-btn.email       { background: #ff9334; }
 .share-btn.pinterest   { background: #ff0000; }
 .share-btn.whatsapp    { background: #009b02; }
 .share-btn.digg        { background: #002d77; }
@@ -176,13 +172,6 @@ footer {
 .share-btn.pocket      { background: #ff0000; }
 .share-btn.flipboard   { background: #840016; }
 .share-btn.telegram    { background: #3582ff; }
-.modal-backdrop {
-    position: relative;
-}
-.modal-footer {
-    justify-content: flex-start;
-}
-
 </style>
 </head>
 <body>
@@ -228,20 +217,17 @@ footer {
             </button>
             </div>              
               <form class="form-inline collapse navbar-collapse">  
-                  <h4 style="color: white;" >500 Shares</h4> &nbsp; &nbsp;
-                  <a href="#" target="_blank" class="share-btn email" >
-                  <i class="fa fa-envelope"></i>
-                  </a>&nbsp;
-                  <a href="#" target="_blank" class="share-btn facebook">
-                  <i class="fa fa-facebook"></i>
-                  </a>&nbsp;
+                  <h6 style="color: white;" >500 Shares</h6> &nbsp; &nbsp;
+                  <h6 style="color: white;" >500 Views</h6> &nbsp; &nbsp;
                   <a href="#" target="_blank" data-toggle="modal" data-target="#myModal" class="share-btn share">
                   <i class="fa fa-share-alt"></i>
                   </a>&nbsp;
-                 
               </form>
             </ul>
-            <div class="modal" id="myModal">
+            
+          </nav>
+        <!-- end navbar -->
+<div class="modal" id="myModal">
               <div class="modal-dialog">
                 <div class="modal-content">
 
@@ -339,28 +325,52 @@ footer {
                   <a href="https://telegram.me/share/url?url=https://blog.easybranches.com/" target="_blank" class="share-btn telegram">
                   <i class="fa fa-telegram"></i>
                   </a> 
-                  
                   </div>
                  
                   </div>
                   <!-- Modal footer -->
-                  <div class="modal-footer">
+                  <div class="modal-footer" style="justify-content: flex-start;">
                     <div align="left">
                       Share button by Easy Branches network 
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
-            
-            
-          </nav>
-        <!-- end navbar -->
-
 <section class="candy-wrapper" >
-  <article class="main"><h1>I have lots of content</h1><p>Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p><p>Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><div class="large-photo"></div><p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p></article><!-- Leave No Space
-  --><aside class="sidebar fixedsticky"><h2>Sticky!</h2><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna justo sit amet risus.</p><a href="#" class="button">Do Something!</a></aside>
+
+  <article class="main"><h1>I have lots of content</h1><p>Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p><p>Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><div class="large-photo"></div><p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p></article><!-- Leave No Space
+  --><aside class="sidebar fixedsticky">
+  <div class="test">
+  <div class="card" style="width: 100%; ">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  </div><br>
+  </div>
+  <video width="100%" height="100%" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <br>
+  <video width="100%" height="100%" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <br>
+  <video width="100%" height="100%" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <br>
+  
+  </aside>
 </section>
 <footer><p>Don't overlap me!</p></footer>
 
